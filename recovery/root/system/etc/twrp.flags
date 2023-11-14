@@ -55,7 +55,8 @@
 /otp                      emmc      /dev/block/by-name/otp                                 flags=display=otp
 /tkv                      emmc      /dev/block/by-name/tkv                                 flags=display=tkv
 # Flashable logical partitions
-/system_image             emmc      /dev/block/bootdevice/by-name/system             flags=display="System Image";backup=1;flashimg=1;slotselect
-/vendor_image             emmc      /dev/block/bootdevice/by-name/vendor             flags=display="Vendor Image";backup=1;flashimg=1;slotselect
-/system_ext_image         emmc      /dev/block/bootdevice/by-name/system_ext         flags=display="System_EXT Image";backup=1;flashimg=1;slotselect
-/product_image            emmc      /dev/block/bootdevice/by-name/product            flags=display="Product Image";backup=1;flashimg=1;slotselect
+/system_image       emmc  /dev/block/mapper/system                       flags=backup=1;display="System Image";slotselect;flashimg=1
+/system_ext_image   emmc  /dev/block/mapper/system_ext                   flags=backup=1;display="System_ext Image";slotselect;flashimg=1
+/vendor_image       emmc  /dev/block/mapper/vendor                       flags=backup=1;display="Vendor Image";slotselect;flashimg=1
+/product_image      emmc  /dev/block/mapper/product                      flags=backup=1;display="Product Image";slotselect;flashimg=1
+/odm_image          emmc  /dev/block/mapper/odm_dlkm                     flags=backup=1;display="ODM Image";slotselect;flashimg=1
