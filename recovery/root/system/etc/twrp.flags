@@ -54,3 +54,8 @@
 /dtbo                     emmc      /dev/block/by-name/dtbo                                flags=display=dtbo;backup=1;flashimg=1;slotselect
 /otp                      emmc      /dev/block/by-name/otp                                 flags=display=otp
 /tkv                      emmc      /dev/block/by-name/tkv                                 flags=display=tkv
+# Flashable logical partitions
+/system_image             emmc      /dev/block/bootdevice/by-name/system             flags=display="System Image";backup;flashimg
+/vendor_image             emmc      /dev/block/bootdevice/by-name/vendor             flags=display="Vendor Image";backup;flashimg
+/system_ext_image         emmc      /dev/block/bootdevice/by-name/system_ext         flags=display="System_EXT Image";backup;flashimg
+/product_image            emmc      /dev/block/bootdevice/by-name/product            flags=display="Product Image";backup;flashimg
