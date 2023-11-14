@@ -154,5 +154,11 @@ TW_HAS_MTP := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+# Tools
+TW_INCLUDE_FB2PNG := true
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_LPTOOLS := true
 
 TW_DEVICE_VERSION := cd-Crypton-akifakif32
